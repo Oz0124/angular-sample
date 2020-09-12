@@ -1,5 +1,9 @@
 # Demo
 
+This is a angular sample.
+
+[Demo](https://oz0124.github.io/angular-sample/)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4.
 
 ## Development server
