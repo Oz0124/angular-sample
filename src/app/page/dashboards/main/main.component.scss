@@ -1,0 +1,79 @@
+@import '../../../styles/variable.scss';
+
+.main-container {
+    .page-content.dashboard-main-page {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        overflow-y: auto;
+
+        background-color: #555;
+        color: #fff;
+
+        .no-padding {
+            padding: 0;
+        }
+
+        .left,
+        .middle,
+        .right {
+            padding: 5px;
+        }
+
+        .left,
+        .middle,
+        .right {
+            .chart-container {
+                padding: 5px;
+
+                .chartBlock {
+                    padding: 5px;
+                    background-color: rgba(0, 0, 0, 0.6);
+                    border: 1px solid #333;
+                    border-radius: 5px;
+                }
+            }
+        }
+
+        .message-board,
+        .status-block {
+            padding: 5px;
+        }
+
+        .status-block {
+            display: table;
+            width: 100%;
+
+            .status-body {
+                display: table-cell;
+                text-align: center;
+                vertical-align: middle;
+
+                background-color: rgba(0, 0, 0, 0.6);
+                border: 1px solid #333;
+                border-radius: 5px;
+
+                .text {
+                    font-size: 40px;
+                    margin-left: 20px;
+                }
+
+                .text,
+                .status-light {
+                    display: inline-block;
+                    vertical-align: top;
+                }
+
+                .status-light {
+                    width: 50px;
+                    height: 50px;
+                    border: 2px solid #eee;
+                    border-radius: 50%;
+                    background-color: #5cb85c;
+                }
+            }
+        }
+    }
+}

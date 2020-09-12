@@ -1,0 +1,11 @@
+<app-common-navbar
+    titleString='Dashboard'
+    *ngIf="true">
+</app-common-navbar>
+<div class="page-container" [style.top]="'50px'" [style.bottom]="'30px'">
+    <router-outlet></router-outlet>
+</div>
+<app-common-footer
+    titleString='Powered by Max'
+    *ngIf="true">
+</app-common-footer>

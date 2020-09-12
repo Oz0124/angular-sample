@@ -1,0 +1,92 @@
+<div #content class="page-content dashboard-main-page">
+    <div class="ui-g">
+        <div class="ui-g-2 ui-sm-12 ui-md-12 ui-lg-2 no-padding">
+            <div #leftBlock class="left">
+                <div class="ui-g-12 no-padding">
+                    <div class="chart-container">
+                        <div echarts
+                            class="chartBlock"
+                            #chartBlock3
+                            (chartInit)="onChartInit(3, $event)"
+                            [options]="gaugeOptions"
+                            [merge]="gaugeUpdateOptions"
+                            [theme]="'dark'">
+                        </div>
+                    </div>
+                </div>
+                <div class="ui-g-12 no-padding">
+                    <div class="chart-container">
+                        <div echarts
+                            class="chartBlock"
+                            #chartBlock4
+                            (chartInit)="onChartInit(4, $event)"
+                            [options]="gaugeOptions"
+                            [theme]="'dark'">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ui-g-7 ui-sm-12 ui-md-12 ui-lg-7 no-padding">
+            <div #middleBlock class="middle">
+                <div class="ui-g-12 no-padding">
+                    <div class="chart-container">
+                        <div echarts
+                            class="chartBlock"
+                            #chartBlock5
+                            (chartInit)="onChartInit(5, $event)"
+                            [options]="mapOptions"
+                            [theme]="'dark'">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ui-g-3 ui-sm-12 ui-md-12 ui-lg-3 no-padding">
+            <div #rightBlock class="right">
+                <div class="ui-g-12 no-padding">
+                    <div class="chart-container">
+                        <div echarts
+                            class="chartBlock"
+                            #chartBlock1
+                            (chartInit)="onChartInit(1, $event)"
+                            [options]="lineOptions"
+                            [merge]="lineUpdateOptions"
+                            [theme]="'dark'">
+                        </div>
+                    </div>
+                </div>
+                <div class="ui-g-12 no-padding">
+                    <div class="chart-container">
+                        <div echarts
+                            class="chartBlock"
+                            #chartBlock2
+                            (chartInit)="onChartInit(2, $event)"
+                            [options]="barOptions"
+                            [theme]="'dark'">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ui-g-12 ui-sm-12 ui-md-12 ui-lg-12 no-padding">
+            <div class="ui-g">
+                <div class="ui-g-2 ui-sm-12 ui-md-12 ui-lg-2 no-padding">
+                    <div #statusBlock class="status-block">
+                        <div class="status-body">
+                            <div class="status-light"></div>
+                            <div class="text">OK</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui-g-10 ui-sm-12 ui-md-12 ui-lg-10 no-padding">
+                    <div #messageBoardBlock class="message-board">
+                        <app-message-board [messageList]="messageList">
+
+                        </app-message-board>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
